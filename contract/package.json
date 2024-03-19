@@ -1,0 +1,16 @@
+{
+	"name": "hardhat-project",
+	"devDependencies": {
+		"@nomicfoundation/hardhat-toolbox": "^3.0.0",
+		"hardhat": "^2.18.3"
+	},
+	"dependencies": {
+		"dotenv": "^16.3.1"
+	},
+	"scripts": {
+		"compile": "npx hardhat compile",
+		"_deploy": "npx hardhat run ./scripts/deploy.js",
+		"deploy:dev": "HARDHAT_NETWORK=ganache npm run _deploy",
+		"deploy:prod": "HARDHAT_NETWORK=mumbai npm run _deploy"
+	}
+}
