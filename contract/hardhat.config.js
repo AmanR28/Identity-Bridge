@@ -7,6 +7,9 @@ const PRIVATE_KEY_GANACHE = process.env.PRIVATE_KEY_GANACHE;
 const RPC_URL_ALCHEMY = process.env.RPC_URL_ALCHEMY;
 const PRIVATE_KEY_ALCHEMY = process.env.PRIVATE_KEY_ALCHEMY;
 
+const RPC_URL_ALCHEMY_SEPOLIA = process.env.RPC_URL_ALCHEMY_SEPOLIA;
+const PRIVATE_KEY_ALCHEMY_SEPOLIA = process.env.PRIVATE_KEY_ALCHEMY_SEPOLIA;
+
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
 	solidity: "0.8.19",
@@ -27,6 +30,12 @@ module.exports = {
 			url: RPC_URL_ALCHEMY,
 			accounts: [PRIVATE_KEY_ALCHEMY],
 			chainId: 80001,
+			blockConfirmations: 5,
+		},
+		sepolia: {
+			url: RPC_URL_ALCHEMY_SEPOLIA,
+			accounts: [PRIVATE_KEY_ALCHEMY_SEPOLIA],
+			chainId: 11155111,
 			blockConfirmations: 5,
 		},
 	},

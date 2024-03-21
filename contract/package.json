@@ -11,6 +11,7 @@
 		"compile": "npx hardhat compile",
 		"_deploy": "npx hardhat run ./scripts/deploy.js",
 		"deploy:dev": "HARDHAT_NETWORK=ganache npm run _deploy",
-		"deploy:prod": "HARDHAT_NETWORK=mumbai npm run _deploy"
+		"deploy:mumbai": "HARDHAT_NETWORK=mumbai npm run _deploy",
+		"deploy:sepolia": "HARDHAT_NETWORK=sepolia npm run _deploy"
 	}
 }
