@@ -123,11 +123,6 @@ const VpRequest = () => {
 
 				<Grid container justifyContent="center" spacing={3}>
 					<Grid item>
-						<Typography variant="h6">
-							Score: {score} / {reqScore}
-						</Typography>
-					</Grid>
-					<Grid item>
 						<Button
 							type="button"
 							variant="contained"
